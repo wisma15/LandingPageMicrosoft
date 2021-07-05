@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigasi -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="/index.html" class="flex title-font font-medium items-center text-gray-600 mb-4 md:mb-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" width="30" alt="">
+                <span class="ml-3 text-xl font-bold">Microsoft</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="/about.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="/jadwal_pelatihan.html" class="mr-5 hover:text-gray-900">Jadwal Pelatihan</a>
+
+                <!-- Dropdown Jenis Latihan -->
+                <div class="relative inline-block text-left dropdown mr-5">
+                    <span class="rounded-md">
+                        <button
+                            class="inline-flex justify-center w-full leading-5 hover:text-gray-900 transition duration-150 ease-in-out rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                            type="button" aria-controls="headlessui-menu-items-117">
+                            <span>Jenis Pelatihan</span>
+                            <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z">
+                                </path>
+                            </svg>
+                        </button>
+                    </span>
+                    <div
+                        class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                        <div class="absolute w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md outline-none"
+                            role="menu">
+                            <div class="py-1">
+                                <a href="/jenis_pelatihan.html"
+                                    class="text-gray-700 flex justify-between px-4 py-2 text-sm leading-5 text-left">
+                                    MTA</a>
+                                <a href="/jenis_pelatihan.html"
+                                    class="text-gray-700 flex justify-between px-4 py-2 text-sm leading-5 text-left">
+                                    Networking</a>
+                                <a href="/jenis_pelatihan.html"
+                                    class="text-gray-700 flex justify-between px-4 py-2 text-sm leading-5 text-left">
+                                    Database</a>
+                                <a href="/jenis_pelatihan.html"
+                                    class="text-gray-700 flex justify-between px-4 py-2 text-sm leading-5 text-left">
+                                    Developer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- endDropdown -->
+
+
+                <a href="/harga.html" class="mr-5 hover:text-gray-900">Harga</a>
+            </nav>
+
+            <!-- Searchbar -->
+            <div class="shadow flex mt-10 md:mt-0 ">
+                <input class="w-full rounded p-2" type="text" placeholder="Search...">
+                <button class="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Tentang 
+                        <br/> Microsoft Certified Educator</h1>
+                    <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                    The Microsoft Certified Educator exam assesses whether educators understand how to apply technology tools in the six different content domains, not whether they are proficient in using specific technology tools. If you are looking for information on getting certified to teach specific Microsoft products and technologies.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="http://www.trusttrain.com/images/fac3.jpg" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Fasilitas</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fasilitas Training</h2>
+                        <p class="leading-relaxed text-base">To ensure that all our students have a comfortable place to learn and relax we have created a cafe for students to unwind.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="http://www.trusttrain.com/images/t1.jpg" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Trainer</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Trainers in MCE</h2>
+                        <p class="leading-relaxed text-base">Microsoft Certified Trainers (MCTs) are classroom and e-learning instructors, and user group leaders who combine their experience, and passion for training and leadership.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="http://www.trusttrain.com/images/8.jpg" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Training Style</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Types of Training</h2>
+                        <p class="leading-relaxed text-base">When it comes to quality instruction in a classroom setting, Trust Training Partner is the leader.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="http://www.trusttrain.com/images/cert.jpg" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">MOC</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Microsoft Official Curriculum</h2>
+                        <p class="leading-relaxed text-base">These materials are design by experts and provide complete step by step guides for students to learn and master technologies from Microsoft.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center text-gray-700 mb-4 md:mb-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" width="30" alt="">
+                <span class="ml-3 text-xl font-bold">Microsoft</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2021 Teknologi Web
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
